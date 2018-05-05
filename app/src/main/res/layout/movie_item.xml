@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/tiny_layout_padding"
+    android:layout_margin="@dimen/tiny_layout_padding"
+    android:background="@color/whitebackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/image_layout_width"
+        android:layout_height="@dimen/image_layout_height"
+        android:scaleType="centerCrop"
+        android:id="@+id/movie_image"
+        android:contentDescription="@string/poster_image_thumbnail_content_description" />
+
+    <TextView
+        android:layout_width="@dimen/image_layout_width"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/movie_title"
+        android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
