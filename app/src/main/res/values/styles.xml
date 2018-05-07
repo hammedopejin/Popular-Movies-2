@@ -10,4 +10,12 @@
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
+    <style name="LayoutView" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/activity_layout_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_layout_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_layout_margin</item>
+        <item name="android:layout_marginStart">@dimen/activity_layout_margin</item>
+    </style>
+
 </resources>
