@@ -13,9 +13,9 @@
         android:visibility="invisible" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/movies_rv"
+        android:id="@+id/trailers_rv"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        tools:context=".Fragment.MainActivityFragment" />
+        tools:context=".Activity.TrailerActivity" />
 
 </FrameLayout>

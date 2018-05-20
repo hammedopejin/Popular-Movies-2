@@ -1,16 +1,48 @@
 <resources>
+
     <string name="app_name">PopularMovies</string>
+
     <string name="action_settings">Settings</string>
+    <string name="action_favorites">Favorites</string>
+    <string name="action_top_rated">Top Rated</string>
+    <string name="action_popular">Popular</string>
+
+    <!-- Strings for DetailActivity -->
     <string name="detail_synopsis_label">Synopsis:</string>
     <string name="detail_release_date_label">Release Date:</string>
     <string name="detail_ratings_label">Ratings:</string>
     <string name="detail_original_title_label">Original Title:</string>
+    <string name="detail_movie_duration_label">Movie Duration:</string>
+    <string name="trailers_button_label">TRAILER</string>
+    <string name="mark_as_favorite_btn_label">MARK AS FAVORITE</string>
+    <string name="review_button_label">REVIEWS</string>
     <string name="poster_image_thumbnail_content_description">Movie poster thumbnail image</string>
+    <string name="uri_error">URI cannot be null</string>
     <string name="detail_error_message">Movie data not available</string>
+    <string name="com_planetpeopleplatform_popularmovies_preference_favorite_file_key">favorite</string>
+    <string name="action_share">Share</string>
+
+
+    <!-- Strings for ReviewActivity -->
+    <string name="review_authur_label">Authur:</string>
+    <string name="review_content_label">Review:</string>
+
+    <string name="review_error_message">Review data not available</string>
+
+    <!-- Strings for TrailerActivity -->
+    <string name="trailer_type_label">Type:</string>
+    <string name="trailer_name_label">Name:</string>
+    <string name="title_activity_trailers">Movie Trailers</string>
+    <string name="trailer_error_message">Trailers data not available</string>
+
+
+    <!-- Strings for Activity labels -->
+    <string name="title_activity_reviews">Movie Reviews</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_detail">Movie Details</string>
+
 
     <!-- Strings related to Settings -->
-
     <string name="pref_title_sort_movies_by">Sort Movies By</string>
 
     <!-- Key name for sorting type in SharedPreferences -->
@@ -22,14 +54,21 @@
     <!-- Value in SharedPreferences for top rated option -->
     <string name="pref_sort_top_rated" translatable="false">top_rated</string>
 
+    <!-- Value in SharedPreferences for top rated option -->
+    <string name="pref_sort_favorites" translatable="false">favorites</string>
+    <string name="no_favorites_saved">No Favorite Movies saved yet!!</string>
+
+
     <string-array name="pref_sort_list_titles">
         <item>Popular</item>
         <item>Top Rated</item>
+        <item>Favorites</item>
     </string-array>
 
     <string-array name="pref_sort_list_values">
         <item>popular</item>
         <item>top_rated</item>
+        <item>favorites</item>
     </string-array>
 
 

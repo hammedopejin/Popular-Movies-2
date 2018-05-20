@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/LayoutView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/trailer_thumbnail_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="2"
+                    android:text="@string/trailer_type_label"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/trailer_type_tv"
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tool:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_weight="2"
+                    android:text="@string/trailer_name_label"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/trailer_name_tv"
+                    style="@style/TextViewStyle"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tool:text="TextView" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -20,7 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.DetailActivity">
+        <activity
+            android:name=".Activity.DetailActivity"
+            android:label="@string/title_activity_detail">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activity.MainActivity" />
@@ -32,6 +34,25 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activity.MainActivity" />
         </activity>
+        <activity
+            android:name=".Activity.ReviewActivity"
+            android:label="@string/title_activity_reviews">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.DetailActivity" />
+        </activity>
+        <activity android:name=".Activity.TrailerActivity"
+            android:label="@string/title_activity_trailers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.DetailActivity" />
+        </activity>
+
+        <provider
+            android:authorities="com.planetpeopleplatform.popularmovies"
+            android:name="com.planetpeopleplatform.popularmovies.data.FavoritesProvider"
+            android:exported="false"
+            android:syncable="true"/>
     </application>
 
 </manifest>

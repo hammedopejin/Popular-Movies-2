@@ -2,6 +2,8 @@ package com.planetpeopleplatform.popularmovies.utilities;
 
 import android.net.Uri;
 
+import com.planetpeopleplatform.popularmovies.BuildConfig;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -10,8 +12,6 @@ import java.net.URL;
 import java.util.Scanner;
 
 import static com.planetpeopleplatform.popularmovies.utilities.Constants.KEY;
-import static com.planetpeopleplatform.popularmovies.utilities.Constants.MOVIE_BASE_URL;
-import static com.planetpeopleplatform.popularmovies.utilities.Constants.MYKEY;
 
 /**
  * Created by Hammedopejin on 4/30/2018.
@@ -20,14 +20,34 @@ import static com.planetpeopleplatform.popularmovies.utilities.Constants.MYKEY;
 public class NetworkUtils {
 
 
-    public static URL getUrl(String s) {
-        return buildUrl(s);
+    public static URL getUrl(String baseUrl, String path1, String path2) {
+        if (!path2.isEmpty()){
+            return buildUrls(baseUrl, path2, path1);
+        }
+        return buildUrl(baseUrl, path1);
     }
 
-    private static URL buildUrl(String query) {
-        Uri movieQueryUri = Uri.parse(MOVIE_BASE_URL).buildUpon()
-                .appendPath(query)
-                .appendQueryParameter(KEY, MYKEY)
+    private static URL buildUrls(String baseUrl, String path2, String path1) {
+        Uri movieQueryUri = Uri.parse(baseUrl).buildUpon()
+                .appendPath(path2)
+                .appendPath(path1)
+                .appendQueryParameter(KEY, BuildConfig.MOVIEDB_API_KEY)
+
+                .build();
+
+        try {
+            URL movieQueryUrl = new URL(movieQueryUri.toString());
+            return movieQueryUrl;
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private static URL buildUrl(String baseUrl, String path1) {
+        Uri movieQueryUri = Uri.parse(baseUrl).buildUpon()
+                .appendPath(path1)
+                .appendQueryParameter(KEY, BuildConfig.MOVIEDB_API_KEY)
                 .build();
 
         try {
