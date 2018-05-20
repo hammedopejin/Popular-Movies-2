@@ -1,13 +1,18 @@
 # Popular-Movies-App
 A functional app that allows you to view popular movies by making an API call to themoviedb.org
 
+## New Functions added:
+* Content Provider created to store favorite movies
+* Movie trailer sharing enabled
+* Movie trailers and reviews accessible 
+* GridView turned to 2 columns for portrait view and 3 columns for landscape view 
 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/hammedopejin/Popular-Movies-App/blob/master/Popular%20Movies%20App%20Phase%201%20Demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/hammedopejin/Popular-Movies-2/blob/master/Popular%20Movies%20App%20Phase%202%20Demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://github.com/hammedopejin/Popular-Movies-App/blob/master/powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png' title='themoviedb.org logo' width='' alt='themoviedb.org logo' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
